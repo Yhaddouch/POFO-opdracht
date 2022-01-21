@@ -45,11 +45,11 @@
 #home{
     display: flex;  
     flex-direction: column;  
-    background-color: tomato;
+    background-color: transparent;
     height: 840px;
     justify-content: center;
     align-items: center;
-    color: violet;
+    color: salmon;
 }
 
 #home::before{
@@ -57,7 +57,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: url('img') no-repeat center center/cover; 
+    background: url('fotoPOFO.jpg') no-repeat center center/cover; 
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -81,17 +81,110 @@
 
 /*portfolio*/
 
-#portfolio{
+#projects{
     display: flex;
     flex-direction: column;
     background-color: rosybrown;
-    color: sandybrown;
-    align-items: center;
-    padding: 20px;
+}
+#projects h1{
+    margin: 60px;
 }
 
 .gallery{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    
 }
+.gallery img{
+    width: 360px;
+    height: 640px;
+    padding: 10px;
+    margin: 10px;
+}
+.gallery img:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+/*work and education */
+
+#workeducation{
+    display: flex;
+    flex-direction: column;
+    background-color: yellowgreen;
+}
+#workeducation h1{
+    margin: 60px;
+    text-align: center;
+}
+.kolommen{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+}
+
+.box{
+    height: 300px;
+    width: 500px;
+    background-color:yellow ;
+    border-radius: 20px;
+    margin: 30px;
+}
+.box h2{
+ color: violet;
+ font-size: 2rem;
+ margin-bottom: 40px;
+}
+.box p{
+    color: black;
+    font-size: 1.1rem;
+}
+/*skillset*/
+
+#skillset{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display: flex;
+}
+.box2{
+   display: flex; 
+   flex-direction: column;
+   width: 350px;
+   height: 450px;
+   border: 1px black;
+   margin: 10px;
+   align-items: center;
+   text-align: justify;
+   padding: 10px;
+   border-radius: 15px;
+   background: linear-gradient(to top, blue 50%, purple 50%); 
+   background-size: 100% 200% ;
+   transition: all .8s;
+}
+.box2:hover{
+    background-position: left bottom;
+    color: gray;
+    border: none;
+    box-shadow: 0 0 20px brown;
+    cursor:grabbing ;
+
+}
+.social-icon{
+ font-size: 75px;
+ color: grey;
+ transition: color 0.6s;
+ text-decoration: none;
+ padding: 100px;
+}
+.social-icon:hover{
+    color: blue;
+}
+.social-icon p{
+    text-decoration-style: wavy;
+}
+
+
+/*gemaakt door Younes8/
