@@ -191,7 +191,19 @@
 body{
     background-color: #e4a797;
 }
+::-webkit-scrollbar {
+    width: 15px;
+  }
 
+
+  ::-webkit-scrollbar-track {
+    background: #8cccf4;;
+  }
+
+
+  ::-webkit-scrollbar-thumb {
+    background: #04142f;;
+  }
 
 
 
